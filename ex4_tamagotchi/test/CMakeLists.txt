@@ -1,14 +1,14 @@
 add_executable(
-        NeuronTests
-        testNeuronClass.cpp
+        TamaTests
+        testTamagotchi.cpp
 )
 
 # https://google.github.io/googletest/quickstart-cmake.html
 target_link_libraries(
-        NeuronTests
+        TamaTests
         gtest_main
-        neuron
+        tamagotchi
 )
 
 include(GoogleTest)
-gtest_discover_tests(NeuronTests)
+gtest_discover_tests(TamaTests)

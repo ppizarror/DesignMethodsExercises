@@ -1,6 +1,3 @@
-#pragma clang diagnostic push
-#pragma ide diagnostic ignored "cert-err58-cpp"
-
 #include <gtest/gtest.h>
 #include "../src/item/psxgame.h"
 #include "../src/item/wiigame.h"

@@ -1,0 +1,1 @@
+add_library(library INTERFACE library.h)

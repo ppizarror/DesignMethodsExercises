@@ -1,8 +1,6 @@
 #include "tamagotchi.h"
 
-void State::setState(State *state) {
-    this->tama->setState(state);
-}
+void State::setState(State *state) { this->tama->setState(state); }
 
 void Happy::doSport() { this->setState(new Hungry()); }
 

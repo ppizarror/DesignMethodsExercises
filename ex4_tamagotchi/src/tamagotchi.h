@@ -5,6 +5,7 @@ private:
     State *state;
 public:
     Tamagotchi() { this->setState(new Happy()); }
+    ~Tamagotchi() {if (state) delete state; }
     bool isHappy() { return state->isHappy(); }
     bool isHungry() { return state->isHungry(); }
     bool isSleepy() { return state->isSleepy(); }

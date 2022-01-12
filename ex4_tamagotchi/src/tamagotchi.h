@@ -12,6 +12,7 @@ public:
     void giveFood() { state->giveFood(); }
     void sleep() { state->sleep(); }
     void setState(State *s) {
+        if (state) { delete state; }
         state = s;
         s->setTamagotchi(this);
     }
